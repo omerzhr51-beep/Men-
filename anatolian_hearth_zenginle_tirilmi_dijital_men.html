@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anatolian Hearth - Digital Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100..900&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#2d1600",
+                        "inverse-on-surface": "#f2f1ec",
+                        "background": "#fbf9f4",
+                        "on-tertiary-container": "#dfdcdc",
+                        "on-primary-fixed-variant": "#7e2c11",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb59f",
+                        "on-primary-fixed": "#3a0a00",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#f0eee9",
+                        "surface-container-high": "#eae8e3",
+                        "on-surface-variant": "#56423d",
+                        "tertiary-fixed": "#e4e2e1",
+                        "tertiary": "#494949",
+                        "inverse-primary": "#ffb59f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "surface-dim": "#dbdad5",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1b1c19",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "secondary-container": "#fea54a",
+                        "outline": "#89726b",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-primary-container": "#ffd3c6",
+                        "surface-container-low": "#f5f3ee",
+                        "tertiary-container": "#616161",
+                        "secondary-fixed": "#ffdcc0",
+                        "primary-fixed": "#ffdbd0",
+                        "on-background": "#1b1c19",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-container": "#a04528",
+                        "surface-variant": "#e4e2dd",
+                        "secondary": "#8d4f00",
+                        "secondary-fixed-dim": "#ffb875",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-tint": "#9d4326",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#dcc1b9",
+                        "primary": "#812e13",
+                        "inverse-surface": "#30312e",
+                        "surface": "#fbf9f4",
+                        "on-secondary-container": "#6e3d00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "section-gap": "48px",
+                        "container-margin": "20px",
+                        "base": "8px",
+                        "item-gap": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["EB Garamond"],
+                        "label-price": ["Work Sans"],
+                        "display-lg": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "label-caps": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "label-price": ["18px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { scroll-behavior: smooth; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased pb-24">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md full-width top-0 sticky z-50 border-b border-outline-variant/30 flex justify-between items-center px-container-margin py-base w-full">
+<div class="flex items-center gap-2">
+<h1 class="text-headline-lg-mobile font-headline-lg-mobile text-primary dark:text-primary-fixed-dim">Anatolian Hearth</h1>
+</div>
+<div class="text-primary dark:text-primary-fixed-dim hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors flex items-center">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+</div>
+</header>
+<div class="px-container-margin py-4 text-center border-b border-outline-variant/20 mb-8">
+<p class="text-body-md font-body-md text-on-surface-variant">anatolianhearth.com</p>
+</div>
+<!-- Category Nav (Sticky) -->
+<nav class="sticky top-[64px] z-40 bg-background/90 backdrop-blur-sm border-b border-outline-variant/20 mb-8 overflow-x-auto hide-scrollbar px-container-margin">
+<ul class="flex whitespace-nowrap py-4 gap-6">
+<li><a class="text-label-caps font-label-caps text-primary border-b-2 border-primary pb-2 uppercase" href="#corbalar">Çorbalar & Başlangıçlar</a></li>
+<li><a class="text-label-caps font-label-caps text-on-surface-variant hover:text-secondary transition-colors pb-2 uppercase" href="#anayemekler">Ana Yemekler</a></li>
+<li><a class="text-label-caps font-label-caps text-on-surface-variant hover:text-secondary transition-colors pb-2 uppercase" href="#durumler">Dürümler</a></li>
+<li><a class="text-label-caps font-label-caps text-on-surface-variant hover:text-secondary transition-colors pb-2 uppercase" href="#tatlilar">Tatlılar & Meyve</a></li>
+<li><a class="text-label-caps font-label-caps text-on-surface-variant hover:text-secondary transition-colors pb-2 uppercase" href="#icecekler">İçecekler</a></li>
+<li><a class="text-label-caps font-label-caps text-on-surface-variant hover:text-secondary transition-colors pb-2 uppercase" href="#ikramlar">İkramlarımız</a></li>
+</ul>
+</nav>
+<main class="max-w-3xl mx-auto px-container-margin">
+<!-- Section 1: Çorbalar & Başlangıçlar -->
+<section class="mb-section-gap scroll-mt-24" id="corbalar">
+<h2 class="text-headline-md font-headline-md text-primary-container mb-6 border-b border-outline-variant/30 pb-2">Çorbalar & Başlangıçlar</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-item-gap">
+<!-- Item -->
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Mercimek Çorbası" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiOVKIL1ksFR9ftg1bZ_iS6PHZFmoGEzkj1Q3bf3W_MdnenndbkAViofmz3nJa3O8PRxu409Dhk3idNsrbkvy3WhS-d0kdWLsm-Fbi3-mfon1ouqOxS_Lk1yIOXCL3LNc0e2pvhtczWcb7wdv0GYe5bntW7MCA0Qc2HPRHKJ_JvJqIhTOzUXNF0jqz6qq3X6DjbtS8ManvZ7PZp3J1caifvbZLBwHr2C0tyTAOi60YiUvzABderYvY11rhGxF74DWLGQ"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div>
+<h3 class="text-body-lg font-body-lg text-primary">Mercimek Çorbası</h3>
+</div>
+<span class="text-label-price font-label-price text-on-surface">70 TL</span>
+</div>
+</div>
+<!-- Item -->
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Kelle Paça" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBteeYmWk2rWtzw6ASDsFdUdvCcjLudap9S9gIgoN4rH6o5x8AzzaFf2GmAXDLmqOqGrbAKzNUMZin2kfVOgrWcFzhGfFqNcm0mDPP57hYx5pB9MQDCcA-CiKHc1lRWDhRq2PR1-nrtAla8jpF-mOWYx7HyyJxbRDmJWFg9aJP-_kokWW9JrDAikztqQxzyrJx2wSFyA6f5qJHpO4vCaFIgPQEKnYC1kJlSXiIQcHXCiBVsuqy6qQKZDn1ZdzN24-L4sw"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div>
+<h3 class="text-body-lg font-body-lg text-primary">Kelle Paça</h3>
+</div>
+<span class="text-label-price font-label-price text-on-surface">130 TL</span>
+</div>
+</div>
+<!-- Item -->
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Yaprak Sarma" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWILjjjrfcPL933ANUdK7feo1cIdE-zh_RCR3LE4wh-s1erHiI5z4d-jRkqRpgsqxC3bxc0-6wysuG25P-AmrTfGPcqGafOP38sjJhLAjFWRg6wzrQrvOP8XV8mx-g3UOSsUi_KGl_ayRhU5gkjEhCrrX3XJsmTFDGiS2QaNTq3Vl1VjMB0kbV_6VA3I-65qb5wfTIHmZxZo4zlzFs2GYN-bUOxBbgbnUwkftX2dsyG5-48pJcSrvxES9gg-Rvdr7uFw"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div>
+<h3 class="text-body-lg font-body-lg text-primary">Yaprak Sarma</h3>
+</div>
+<span class="text-label-price font-label-price text-on-surface">120 TL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Ana Yemekler -->
+<section class="mb-section-gap scroll-mt-24" id="anayemekler">
+<h2 class="text-headline-md font-headline-md text-primary-container mb-6 border-b border-outline-variant/30 pb-2">Ana Yemekler</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-item-gap">
+<!-- Item (Featured) -->
+<div class="md:col-span-2 flex flex-col md:flex-row gap-4 p-2 bg-surface rounded-lg border border-outline-variant/20 shadow-sm">
+<img class="w-full md:w-1/2 h-48 md:h-64 object-cover rounded" data-alt="A mouth-watering close-up of a traditional Turkish Iskender Kebab on a pristine white plate, sizzling with melted butter being poured over it. The scene is brightly lit in a modern bistro setting, highlighting the rich red tomato sauce, tender meat, and a side of creamy yogurt. Warm, minimalist light-mode aesthetic with earthy tones and vibrant food colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFYe4NHpdBGq9eXNy7Txc1302Oj7SvMISlT8uRq4JvltPOB0jjid1vFueh3Cnl5LRpvPOB511xbOPkUZP2u40YVBC4tUpGMG0DYFx-oB8gNbjbyNDWfqvMQtNsB5A6H5Qr25b8vPVVBJNcBL2TbqVhKZ0VpSMqwRM4vhX8PkdugTVBrTyAGxmEgduxo_nCFXfWHaGMIBe4KTjaMz4anHn5qzRIWAYalAQdmkj0Bqo0mXBksvNhFIuo"/>
+<div class="flex-1 flex flex-col justify-between p-4">
+<div>
+<div class="text-xs font-serif italic text-secondary mb-1">Şefin Tavsiyesi</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-2">İskender</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Döner eti, pide, tereyağı, domates sosu ve yoğurt.</p>
+</div>
+<div class="mt-4 flex justify-end">
+<span class="text-display-lg font-display-lg text-primary-container text-2xl">220 TL</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Köfte" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMdfCIBB6Z7k7z4KESTkufR1A-XCJWc0w_LM2szVArbaliKvQblsvZE3mbweVCFOzt3LwDVosTZiLTEU1n4uk1i4lq8SR-4tt-GnCNZnzy2bButV-jtKEpalMDKnELPzDIWYhVncOzO0kJcQu6W8Jj3AO6lJQhJsGx0MbGXnQuvvz_IsFimn2c0PnNV_0BEjCDcJV_iqVfLxrVRQuODS6fryuE-IZjCjrUzdUdrDb9Q4-KHdnmm9QjplgaN8stgu5Y4A"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div><h3 class="text-body-lg font-body-lg text-primary">Köfte</h3></div>
+<span class="text-label-price font-label-price text-on-surface">180 TL</span>
+</div>
+</div>
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img class="w-24 h-24 object-cover rounded" data-alt="Freshly baked Turkish Kiymali Pide (minced meat flatbread) on a rustic wooden board, garnished with roasted green peppers. Shot from a top-down angle in a bright, modern light-mode setting. The golden crust and savory meat filling are beautifully illuminated, showcasing a clean, minimalist culinary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-GFsXZyf5DDsR29ikJxa_i66Fio_RxPguu5HGkW1rhpuIDmMt2JOPsMlp5K5RaZPbY_nGqrgEjuAO4cde7bzMpWpuGnMdxzAEZeT8qUxTeYyr5L1x0Ro3uI2UppkSPbsBu7xLw3fQouJwviKbCsOfuCbruYAzTPYLmkufXXh55GkcIwWDMpU9yvAQkUlY-dPO0gcpzHt-bF2Lg2-Lfi27JlWoIG84yzC-DT1VxZpp_eijFxtxpjEi"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div><h3 class="text-body-lg font-body-lg text-primary">Kıymalı Pide</h3></div>
+<span class="text-label-price font-label-price text-on-surface">150 TL</span>
+</div>
+</div>
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Patlıcan Musakka" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1XyUvv1DP9mnnOEUwagqAw9rhyM8JkJArmtJyiBCv8Tugt732Gz8QCPcRaSNBDH-2h7IYSaIHYmGIpfm6GFfdUU0Ux4Y4S8gfyw9ntcSLEkm6OGGoAuq6g1h1mwcL78YpqUHIPEpXy0KzAm5_lbJbMEtNSSJ1USH6NyKd4_IvGsZMx6JO83fBTq0C4XMnkX0Nl3_JXrcy_sry6H7TmnoduGwZMQiG6zUDWjzPNV080W3Y1MVV2ZtBytDtSjcKuX4JU3GlqyJxLf"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div><h3 class="text-body-lg font-body-lg text-primary">Patlıcan Musakka</h3></div>
+<span class="text-label-price font-label-price text-on-surface">170 TL</span>
+</div>
+</div>
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Kuru Fasulye" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWtumL-HWuOiyQ33yAkwDeAqf8a0IgDf4gqz6KoOXoIyb3rtqgI_KNdMV7PXr-xI-cwa8mryLNB9x-Y0N6uQA-HozEoEXMSHPpICM5wkz900rIIykQCjKO6kw51CAG5KS_GFgB9-imtt0H4z_DIw-0CYdQhULbPuth35J-Nr_5EN5Taq8MXtjDQcF07juNtNQYT3eUbNb5uLJixpGKCqCE8Zacx9gJ0-ddXc50u2w9kcyZs59esnNeWfHlVhbtu4xY4A"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div><h3 class="text-body-lg font-body-lg text-primary">Kuru Fasulye</h3></div>
+<span class="text-label-price font-label-price text-on-surface">110 TL</span>
+</div>
+</div>
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Pilav" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida/AEtjO1UvedxgJo4HxD2vr2-xbU0tZirbH0_KTVBYGYOmh4mxRaTzVetM0IOMSJ_IptUeVlyWc0IcsSkvdLa3TuDNEFHeFWKsob-L5IcikTOPpr-_yQJL-qDqRA3HbZM9KIdezW40BjXkGO9VsQnAuHXeYMFHB6uxw_Z8VPX96gjyLvW8_hc3OClYWbYWjFdy35EzahQrA-QCAhx_K0c5_cMrFPX6E2MJsjQGZvM5mgyo-dzE1bQrQhApPrqfkLMvocuid18Gb7FMfO2M"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div><h3 class="text-body-lg font-body-lg text-primary">Pilav</h3></div>
+<span class="text-label-price font-label-price text-on-surface">60 TL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Dürümler -->
+<section class="mb-section-gap scroll-mt-24" id="durumler">
+<h2 class="text-headline-md font-headline-md text-primary-container mb-6 border-b border-outline-variant/30 pb-2">Dürümler</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-item-gap">
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Adana Dürüm" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Qk6HZiks5V9qVfvp4Ogp08KQ-GZplwSUfNthRpMjQ3U-eyzDgXeZ0NuEbKCRT7Z7AGPArZAo_sBDaK7G8fiogXQPEi_Xlc9KwsevGcj54N2yZLovOB5QnOM_7WISg-Z9LvrNhk3U7qqoTFMp-1Y9kGTQw1rowsd2giIssAyoEjyZ5KEW9KV2_I1vb0pTnX9Gw33efaBkjhmlo00idyKoyxGob8PqPwlbZ2yFs0TZqcvKJy_IpWsU9ToEFws6DsDpzA"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div><h3 class="text-body-lg font-body-lg text-primary">Adana Dürüm</h3></div>
+<span class="text-label-price font-label-price text-on-surface">160 TL</span>
+</div>
+</div>
+<div class="flex gap-4 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm">
+<img alt="Tavuk Dürüm" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdEWVDiaVzYRRTVUtQYZWpgacJ0R5-bUkSuZAJ4kJqcR0J03ab6woxkCruE1nMTw_Z02iKH0ZsL4n9zPaWZ3umkdT_3bV0JhWCU5blcw9VZeM2tXCBogweHAyEoUGQwqDCbIOybN5B8whh4t3m72doS-YAP2Hcy7WUZdiTNnt2xeMKaqKbEsG7eeYFP96wiOrLaKFvnBW6WN8uP90XrJoDx8aesZc44X9v2NdpC6YmeylOoq3lHfImubhWoYAD8ms-nw"/>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div><h3 class="text-body-lg font-body-lg text-primary">Tavuk Dürüm</h3></div>
+<span class="text-label-price font-label-price text-on-surface">140 TL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Tatlılar & Meyve -->
+<section class="mb-section-gap scroll-mt-24" id="tatlilar">
+<h2 class="text-headline-md font-headline-md text-primary-container mb-6 border-b border-outline-variant/30 pb-2">Tatlılar & Meyve</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-item-gap">
+<div class="flex flex-col gap-2 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm items-center text-center">
+<img alt="Baklava" class="w-32 h-32 object-cover rounded-full shadow-sm mb-2" src="https://lh3.googleusercontent.com/aida/AEtjO1XApcvJOE5dShlfQVq81PPnVr-wPJ6cLsIcWdQgaoLzJ0E01qbwACsYQm0aDBgODBY1l0Lto-rizxe3tCzzKv9oVDnNaiKUX4BFT9T8pVuzNE6RhA_LBR1g1h-A53lQNrlei95ETr3QbCelCRHgWoXK_HoXdHiEvO1rJDXIn8TKGCDW4it3cHlz0E1kfV3Pa-IrZpFRl7-xSo5gxyg-mIoWgVuS7HN3T2DgS1F3DToPGsAnJvf3hlA-xYElnXWTbIbrLdnot5Jk"/>
+<h3 class="text-body-lg font-body-lg text-primary">Baklava</h3>
+<span class="text-label-price font-label-price text-on-surface">150 TL</span>
+</div>
+<div class="flex flex-col gap-2 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm items-center text-center">
+<img alt="Fırın Sütlaç" class="w-32 h-32 object-cover rounded-full shadow-sm mb-2" src="https://lh3.googleusercontent.com/aida/AEtjO1XHqtgXKDm7K7yXI44QBPnG2lRpAvuY-KAjMAWWnKnsyXQVrcx3BxP8Ak4k76d3SLSE2zpNibyY2OgldG9uMsxvMwgV9I6nGAHv0-N94z5gBtT0Zhczb6HT348OP4osc7V9_kJeQc1wVZyMet6JSGCwfLUpjMdkk8N89GYSStpFwyXtk59SebBBiOv6JEkkv6fb2luVFvHkxkgoNqtbe6CEZH0YfVUuOI4c-ztM6ksa8hHI5PYobBN8_yhAnz2p1rKXbCG99Tokrg"/>
+<h3 class="text-body-lg font-body-lg text-primary">Fırın Sütlaç</h3>
+<span class="text-label-price font-label-price text-on-surface">90 TL</span>
+</div>
+<div class="flex flex-col gap-2 p-2 bg-surface rounded-lg border border-outline-variant/10 shadow-sm items-center text-center">
+<img alt="Meyve Tabağı" class="w-32 h-32 object-cover rounded-full shadow-sm mb-2" src="https://lh3.googleusercontent.com/aida/AEtjO1WKaD-jtNQth89PjSUq9Jbj4UQTIcBukjdfkfg77XFNr2ochylfxdWn3ESChBppygdbmqvZF8S83lZ-hD7GHdlMe2nLuBthPMSIpXZMm7LnWLpcN6pSfQAXbY_nz_GyTOyj7RzQF1mFmQJmkpqn3__xfdFi28Dsk-4TIkBstAp6BhGVGJtZN4t0FRhZPSruKtzlsqf01LiJp26mhz7RUDqnX9cS7rSzriIxc_ZMxSDCgJvkRK6eWvgOjCDzLE3z-tqKygUrR5yLXg"/>
+<h3 class="text-body-lg font-body-lg text-primary">Meyve Tabağı</h3>
+<span class="text-label-price font-label-price text-on-surface">250 TL</span>
+</div>
+</div>
+</section>
+<!-- Section 5: İçecekler -->
+<section class="mb-section-gap scroll-mt-24" id="icecekler">
+<h2 class="text-headline-md font-headline-md text-primary-container mb-6 border-b border-outline-variant/30 pb-2">İçecekler</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-item-gap">
+<div class="flex flex-col gap-2 p-2 bg-surface rounded-lg border border-outline-variant/10 items-center text-center">
+<img alt="Kola" class="w-20 h-32 object-contain mb-2" src="https://lh3.googleusercontent.com/aida/AEtjO1X8BZpl_FCp1MZAPrULcHImXl1ffFVHnC90OqgnXj5H_HGYfm2lqSvgVAAJJm_eVb08Y6Txxmh-7hw_5I2lxqfEoe8yottjA6SZBwhQJJM7SYITBjyzn1VhFRnWx-jMqSdyfFS8F-_pj4iIyXctvahMZEYTvVZHwuPxT_e5C-rB8-NIcepF1cqyBI18tTMVWp3EnJiNECueo5SxSnwza_VbxbBm3t8LP7JkiCxQYLXvTqXvgR_5mql00GufnVzpwNdUsOLkOx-btQ"/>
+<h3 class="text-body-lg font-body-lg text-primary">Kola (Kutu)</h3>
+<span class="text-label-price font-label-price text-on-surface">50 TL</span>
+</div>
+<div class="flex flex-col gap-2 p-2 bg-surface rounded-lg border border-outline-variant/10 items-center text-center">
+<img alt="Ayran" class="w-20 h-32 object-contain mb-2" src="https://lh3.googleusercontent.com/aida/AEtjO1VrIV5fH4mIeLl8Zu8ZpoHnXZ4_braqngJMnfa8JUSH60IXuMK4xfmZ_zPWkRgDEQOSfq5Q6KEBqx_4O_iPowqApdaoMn2-lfNB-d5t4XBs_TrIxCFbG3c4cRD46BoCvkKzXdMF4EcBih3J63oMXBG9DVYJGw-AC_6IAA1AJ8prpR6ICFqLdwEk0u1YehQ882Syw2RlXM_a5lDGcK0eVp1XFeHvBCJw8qFm9RrUlBQRqzabiLLyXm8ZoavQvkZ0v5KSmECvyaq2"/>
+<h3 class="text-body-lg font-body-lg text-primary">Ayran</h3>
+<span class="text-label-price font-label-price text-on-surface">30 TL</span>
+</div>
+<div class="flex flex-col gap-2 p-2 bg-surface rounded-lg border border-outline-variant/10 items-center text-center">
+<img alt="Şalgam" class="w-20 h-32 object-contain mb-2" src="https://lh3.googleusercontent.com/aida/AEtjO1WNanUduyNRJ-T3nvvB_SqdFYjLY6qqgJRCGuQ4_DmBuqSfabQn-W8iNojjpVlragkb1YqTZ75Ik4vVrT90euWRULZOLY2S4SBw7z_VjSlgrLH0PNUwIduLukNOxMSQba6jHgaoIoy6PvKStBKmtduTztdrx85coqyeVVrG-5QMIawD0PmkANzyzo_kZX1ttvuV2UUhBeT2UCLhuMkmFeev7D2-48G7ApepwTr2Avyvq8qxRD0qNUMTB1wYg29kVwksYWHKOWNaAQ"/>
+<h3 class="text-body-lg font-body-lg text-primary">Şalgam</h3>
+<span class="text-label-price font-label-price text-on-surface">60 TL</span>
+</div>
+</div>
+</section>
+<!-- Section 6: İkramlarımız -->
+<section class="mb-section-gap scroll-mt-24 bg-surface-container-low p-6 rounded-xl border border-outline-variant/20" id="ikramlar">
+<h2 class="text-headline-md font-headline-md text-primary-container mb-6 border-b border-outline-variant/30 pb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">volunteer_activism</span> İkramlarımız
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-center gap-4">
+<img class="w-16 h-16 object-cover rounded-full shadow-sm" data-alt="A vibrant, fresh seasonal salad (Mevsim Salata) served in a modern white bowl on a light oak table. The salad features crisp lettuce, bright red tomatoes, carrots, and black olives, dressed lightly. The lighting is soft and natural, emphasizing the freshness of the ingredients in a minimalist bistro setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzBjhpHKq-NayuiE1qJmsGOfnljrgWQGjfywbEFgr9iyBLcC7prr8mcszmIK1UgpEk6NdBKs34tdaJo8cPAFQT4VzvTPoarPDID0wRVljtaQCu5jqzWTFjwF7fc0qLE9oziQOUb1CK-ewrtzQ3mXWdDQPv8qYRAyG5Atm2CRpvfHt_xijkDl0SScGOos1xmv0wlDzdQfxfWwbKn9Q7SnfhZVTDVnmi_ibsG28Tcxiu7ywzDft7x-Ax"/>
+<div>
+<h3 class="text-body-lg font-body-lg text-on-surface">Mevsim Salata</h3>
+<span class="text-label-caps font-label-caps text-secondary uppercase">İkram</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Acılı Ezme" class="w-16 h-16 object-cover rounded-full shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ5D1Uo6cfMrOQ4WbU_AglNgmbvQi1kpsGT0RgEf-uvU-hwz4ds-TC5UYc3f2zedj0MfZDvjTtjcgIctd37IOfGftzlNki97po6kIOFBv_qilUbrhMeczNwSg2nKA7QkyZ309_YNojsWSZK1AlClamAu_aBMFERe8F46DOXhmFu4zt4vvs5zs1SK-xdrg8c6i-UhiLlE7eQtic4-gEcgpEHXF2742GuXnF9d-9GNki-VSQMfAtEjdZkBoMjqnbQlKSww"/>
+<div>
+<h3 class="text-body-lg font-body-lg text-on-surface">Acılı Ezme</h3>
+<span class="text-label-caps font-label-caps text-secondary uppercase">İkram</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 bg-surface-variant rounded-full flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-3xl">emoji_food_beverage</span>
+</div>
+<div>
+<h3 class="text-body-lg font-body-lg text-on-surface">Çay</h3>
+<span class="text-label-caps font-label-caps text-secondary uppercase">Yemek Sonrası İkram</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden bg-surface dark:bg-surface-container-lowest fixed bottom-0 w-full z-50 rounded-t-xl border-t border-outline-variant/20 shadow-lg fixed bottom-0 left-0 w-full flex justify-around items-center px-4">
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary-fixed-dim border-t-2 border-primary pt-2 pb-4 hover:bg-surface-container-low dark:hover:bg-surface-container transition-colors" href="#anayemekler">
+<span class="material-symbols-outlined mb-1">restaurant</span>
+<span class="text-label-caps font-label-caps">Ana Yemekler</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-tertiary-container pt-2 pb-4 hover:bg-surface-container-low dark:hover:bg-surface-container transition-colors" href="#tatlilar">
+<span class="material-symbols-outlined mb-1">icecream</span>
+<span class="text-label-caps font-label-caps">Tatlılar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-tertiary-container pt-2 pb-4 hover:bg-surface-container-low dark:hover:bg-surface-container transition-colors" href="#icecekler">
+<span class="material-symbols-outlined mb-1">local_bar</span>
+<span class="text-label-caps font-label-caps">İçecekler</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-tertiary-container pt-2 pb-4 hover:bg-surface-container-low dark:hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span class="text-label-caps font-label-caps">Siparişlerim</span>
+</a>
+</nav>
+<script>
+        // Simple active state observer for top nav
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav:not(.fixed) a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'border-b-2', 'border-primary');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-primary', 'border-b-2', 'border-primary');
+                    link.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>
