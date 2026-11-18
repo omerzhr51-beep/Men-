@@ -662,3 +662,11 @@ renderCatBar();renderMenu();renderTeam();renderStatus();route();
 </script>
 </body>
 </html>
+const firebaseConfig = {
+  apiKey: "SENIN_API_KEY",
+  authDomain: "senin-proje.firebaseapp.com",
+  projectId: "senin-proje",
+  storageBucket: "senin-proje.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcde"
+};
